@@ -1,8 +1,7 @@
 import { StyleSheet } from 'react-native';
-import SignIn from './SignIn';
 
-export const SignInCss = StyleSheet.create({
-    container: {
+export const styles = StyleSheet.create({
+    containerbox: {
       flex: 1,
     },
     imageContainer: {
@@ -63,7 +62,7 @@ export const SignInCss = StyleSheet.create({
     },
     title: {
       width: '60%',
-      color: 'black',
+      color: '#013f53',
       fontSize: 12,
       margin: 5,
       textAlign: 'left',
@@ -76,7 +75,7 @@ export const SignInCss = StyleSheet.create({
     fontSize: 12,
     backgroundColor: 'white',
     padding: 3,
-    color: '#222222',
+    color: '#013f53',
     alignItems: 'center',
     marginLeft: 52,
     marginRight: 25,
@@ -94,10 +93,10 @@ export const SignInCss = StyleSheet.create({
     fontSize: 15
   },
   buttonContainer: {
-    backgroundColor: '#222222'
+    backgroundColor: '#013f53'
   },
   buttonStyle: {
-    backgroundColor: '#222222',
+    backgroundColor: '#013f53',
     width: '60%',
     height: 25,
     marginTop: 20,
