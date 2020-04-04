@@ -1,34 +1,46 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { View, Text, TouchableOpacity, } from 'react-native';
+import {ScrollView, SafeAreaView, View, Text, TouchableOpacity, } from 'react-native';
 
 class HomeScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.textStyle}> This is Home Screen</Text>
+      <SafeAreaView style={styles.container}>
+        <ScrollView style={{ flex: 1}}>
+        <View style={styles.container}>
+          <Text style={styles.textStyle}> This is Home Screen</Text>
 
-        <TouchableOpacity style={styles.buttonStyle}
-          onPress={() => { this.props.navigation.navigate('SignIn') }}>
-          <Text style={styles.buttonTitle}> Sign In</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonStyle}
-          onPress={() => { this.props.navigation.navigate('VerifyUserScreen') }}>
-          <Text style={styles.buttonTitle}>User Verification</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonStyle}
-          onPress={() => { this.props.navigation.navigate('NotificationScreen') }}>
-          <Text style={styles.buttonTitle}>Notification Screen</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonStyle}
-          onPress={() => { this.props.navigation.navigate('SurveyScreen') }}>
-          <Text style={styles.buttonTitle}>Survey Screen</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonStyle}
-          onPress={() => { this.props.navigation.navigate('PresidentMsgScreen') }}>
-          <Text style={styles.buttonTitle}>President Message</Text>
-        </TouchableOpacity>
-      </View>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('SignIn') }}>
+            <Text style={styles.buttonTitle}> Sign In</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('VerifyUserScreen') }}>
+            <Text style={styles.buttonTitle}>User Verification</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('NotificationScreen') }}>
+            <Text style={styles.buttonTitle}>Notification Screen</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('SurveyScreen') }}>
+            <Text style={styles.buttonTitle}>Survey Screen</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('PresidentMsgScreen') }}>
+            <Text style={styles.buttonTitle}>President Message</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('AskAQuestionScreen') }}>
+            <Text style={styles.buttonTitle}>Ask A Question</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}
+            onPress={() => { this.props.navigation.navigate('ImageSliderScreen') }}>
+            <Text style={styles.buttonTitle}>Image Slider Screen</Text>
+          </TouchableOpacity>
+        </View>
+        </ScrollView>
+      </SafeAreaView>
     );
   }
 }

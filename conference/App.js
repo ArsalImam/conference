@@ -9,7 +9,8 @@ import VerifyUserScreen from './src/VerifiyUserScreen/VerifyUserScreen';
 import NotificationScreen from './src/NotificationScreen/NotificationScreen';
 import SurveyScreen from './src/SurveyScreen/SurveyScreen';
 import PresidentMsgScreen from './src/PresidentMsgScreen/PresidentMsgScreen';
-
+import AskAQuestionScreen from './src/AskAQuestionScreen/AskAQuestionScreen'
+import ImageSliderScreen from './src/ImageSliderScreen/ImageSliderScreen'
 const Stack = createStackNavigator();
 
 class App extends Component {
@@ -49,6 +50,18 @@ class App extends Component {
           }}/>
           <Stack.Screen name="PresidentMsgScreen" component={PresidentMsgScreen}  options={{
           title: 'President Message',
+          headerStyle: {
+            backgroundColor: 'white',
+          }, headerTintColor: '#013f53', headerTitleAlign: 'center'
+          }}/>
+          <Stack.Screen name="AskAQuestionScreen" component={AskAQuestionScreen}  options={{
+          title: 'Ask A Question',
+          headerStyle: {
+            backgroundColor: 'white',
+          }, headerTintColor: '#013f53', headerTitleAlign: 'center'
+          }}/>
+          <Stack.Screen name="ImageSliderScreen" component={ImageSliderScreen}  options={{
+          title: 'Image Slider',
           headerStyle: {
             backgroundColor: 'white',
           }, headerTintColor: '#013f53', headerTitleAlign: 'center'
