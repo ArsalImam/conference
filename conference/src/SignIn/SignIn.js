@@ -66,7 +66,8 @@ class SignIn extends Component {
                       autoCorrect={false}
                     />
 
-                    <TouchableOpacity style={styles.buttonStyle}>
+                    <TouchableOpacity style={styles.buttonStyle}
+                      onPress={() => { this.props.navigation.navigate('VerifyUserScreen') }}>
                       <Text style={styles.buttonTitle}>Submit</Text>
                     </TouchableOpacity>
                   </ImageBackground>

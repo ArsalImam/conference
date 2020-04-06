@@ -11,14 +11,6 @@ class HomeScreen extends Component {
           <Text style={styles.textStyle}> This is Home Screen</Text>
 
           <TouchableOpacity style={styles.buttonStyle}
-            onPress={() => { this.props.navigation.navigate('SignIn') }}>
-            <Text style={styles.buttonTitle}> Sign In</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.buttonStyle}
-            onPress={() => { this.props.navigation.navigate('VerifyUserScreen') }}>
-            <Text style={styles.buttonTitle}>User Verification</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.buttonStyle}
             onPress={() => { this.props.navigation.navigate('NotificationScreen') }}>
             <Text style={styles.buttonTitle}>Notification Screen</Text>
           </TouchableOpacity>
@@ -34,10 +26,7 @@ class HomeScreen extends Component {
             onPress={() => { this.props.navigation.navigate('AskAQuestionScreen') }}>
             <Text style={styles.buttonTitle}>Ask A Question</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.buttonStyle}
-            onPress={() => { this.props.navigation.navigate('ImageSliderScreen') }}>
-            <Text style={styles.buttonTitle}>Image Slider Screen</Text>
-          </TouchableOpacity>
+
         </View>
         </ScrollView>
       </SafeAreaView>
@@ -58,17 +47,18 @@ const styles = StyleSheet.create({
     margin: 40
   },
   buttonStyle: {
-
+    borderRadius: 7, 
     backgroundColor: '#013f53',
-    width: '88%',
-    height: '8%',
+    width: '80%',
+    height: 50,
     marginTop: '7%',
   },
   buttonTitle: {
     flex: 1,
     color: 'white',
+    fontWeight: 'bold',
     fontSize: 15,
-    padding: '4%',
+    padding: 12,
     textAlign: 'center',
     alignContent: 'center'
 

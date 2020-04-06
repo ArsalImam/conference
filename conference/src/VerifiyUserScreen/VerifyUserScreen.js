@@ -21,7 +21,7 @@ export default class VerifyYUserScreen extends Component {
                 A text message was sent to
             </Label>
               <Label style={styles.labelStyle}>+923021234567</Label>
-              <Button style={styles.buttonStyle}>
+              <Button style={styles.buttonStyle}   onPress={() => { this.props.navigation.navigate('AddProfileScreen')}}>
                 <Text style={styles.buttonTitle}>Submit</Text>
               </Button>
             </View>
